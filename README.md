@@ -1,6 +1,6 @@
 # Machine Learning Coursework
 
-Practical implementations of **data preprocessing, exploratory data analysis, neural-network classification, and tree-based ensemble learning** developed as part of CSE 472 machine learning coursework. The repository includes Python notebooks for working with real datasets and **from-scratch implementations of Decision Trees, Random Forests, and Extra Trees**, compared against scikit-learn baselines.
+Implementations of **data preprocessing, data analysis, neural-network classification, and tree-based ensemble learning** developed as part of CSE 472 machine learning coursework. The repository includes Python notebooks for working with real datasets and **from-scratch implementations of Decision Trees, Random Forests, and Extra Trees**, compared against scikit-learn baselines.
 
 ## 1. Data preprocessing and diabetes classification
 
@@ -33,7 +33,7 @@ The tree models use **NumPy-based custom implementations**, while scikit-learn i
 ### Custom Decision Tree — `decision_tree.py`
 
 - Defines a `TreeNode` storing node impurity, sample counts, class counts, split feature, threshold, and children.
-- Calculates **Gini impurity**: \(G = 1 - \sum_k p_k^2\).
+- Calculates **Gini impurity**: \(G = 1 - \sum_k p_k^2\)
 - Generates split candidates at midpoints between sorted unique feature values.
 - Chooses the split with the lowest weighted child-node Gini impurity.
 - Recursively builds a binary tree until the configured maximum depth, a pure node, or insufficient samples.
@@ -119,13 +119,5 @@ Open `iris_classification.ipynb`, `Feature_non_numeric.ipynb`, or `2005050/20050
 - [Data preprocessing report](data_preprocessing_offline/2005050/2005050_report.pdf)
 - [Decision tree assignment specification](decision_tree_offline/CSE_472_Assignment_2_DT.pdf)
 - [Decision tree report](decision_tree_offline/2005050_report.pdf)
-
-## Skills demonstrated
-
-- Missing-value handling, duplicate removal, categorical encoding, and scaling
-- Exploratory visualization, correlation analysis, and feature selection
-- Feed-forward network training, validation, and classification metrics
-- Implementing impurity-based tree induction and ensemble learning **without relying on scikit-learn model implementations**
-- Comparing custom classifiers with established library baselines
 
 ---
